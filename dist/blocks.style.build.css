@@ -16,3 +16,30 @@
   margin: 0 auto;
   max-width: 740px;
   padding: 2rem; }
+
+.accord-item-container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1rem;
+  border: 1px solid #dedede;
+  border-radius: .5rem; }
+
+.accord-item-heading {
+  display: block;
+  background: #1e6abc;
+  color: #f4f4f4;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .25rem;
+  border-radius: .25rem;
+  font-size: 14px; }
+  .accord-item-heading:hover {
+    color: #f4f4f4; }
+
+.accord-content {
+  background: #dedede;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  padding: 1rem;
+  font-size: 14px; }
