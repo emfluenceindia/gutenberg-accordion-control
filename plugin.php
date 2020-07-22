@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name: accordion-control — CGB Gutenberg Block Plugin
- * Plugin URI: https://github.com/ahmadawais/create-guten-block/
- * Description: accordion-control — is a Gutenberg plugin created via create-guten-block.
- * Author: mrahmadawais, maedahbatool
- * Author URI: https://AhmadAwais.com/
+ * Plugin Name: Gutenberg Accordion Block
+ * Plugin URI: https://github.com/emfluenceindia/guten-accordion-control
+ * Description: A Gutenberg plugin to place and render an Accordion Control for the frontend.
+ * Author: Subrata Sarkar
+ * Author URI: https://subratasarkar.com
  * Version: 1.0.0
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *
- * @package CGB
+ * @package emfl
  */
 
 // Exit if accessed directly.
