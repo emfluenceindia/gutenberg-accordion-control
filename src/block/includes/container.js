@@ -1,9 +1,10 @@
 /**
+ * BLOCK: accordion-group
+ * Description: can contain multiple accordion-content
  */
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
-const { RichText } = wp.editor;
 const { InnerBlocks } = wp.blockEditor;
 
 function emfl_accordion_container() {
@@ -29,7 +30,13 @@ function emfl_accordion_container() {
         },
 
         save: (props) => {
-
+            return(
+                <div className={props.className}>
+                    <div className="emfl-accord-item-group">
+                        <InnerBlocks.Content/>
+                    </div>
+                </div>
+            );
         }
     } )
 }

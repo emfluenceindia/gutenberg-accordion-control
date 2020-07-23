@@ -1,7 +1,7 @@
 /**
  * BLOCK: accordion-control
  * Uses: Heading, core/list, core/paragraph
- * Place this block inside accordion to create one accordion item
+ * Place this block inside accordion-group block to create an item
  */
 
 const { __ } = wp.i18n;
@@ -53,7 +53,20 @@ function emfl_accordion_control() {
             );
         },
 
-        save: (props) => {}
+        save: (props) => {
+            return(
+                <div className={props.className}>
+                    <div className="emfl-accord-item">
+                        <div className="emfl-item-heading">
+                            { props.attributes.itemHeading ? <RichText.Content tagName="a" value={props.attributes.itemHeading}/> : "Item Heading" }
+                        </div>
+                        <div className="emfl-item-content">
+                            <InnerBlocks.Content/>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
     })
 
 }

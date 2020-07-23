@@ -63,3 +63,98 @@
   padding: 1rem;
   font-size: 14px;
 }
+
+/* Font end */
+
+.wp-block-emfl-accordion-group {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: inherit;
+  margin: 0 auto;
+
+  .emfl-accord-item {
+
+    .emfl-item-heading {
+      cursor: pointer;
+      margin-top: .75rem;
+
+      a {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 84%;
+        background: #303030;
+        display: block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: .65rem;
+        color: $white;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+
+        &:hover, &.accord-active {
+          background: #2ea2cc !important;
+        }
+
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f0da";
+          color: $white;
+          padding: 0 .6rem;
+        }
+      }
+    }
+
+    .emfl-item-content {
+      display: none;
+      font-size: 84%;
+      width: 100%;
+      padding: 1rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px solid $gray;
+      border-top: 0;
+      border-bottom-left-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+
+      figure {
+        margin: 0 auto !important;
+        padding: 0;
+
+        img {
+          width: 100%;
+          margin: 1rem auto;
+          -webkit-border-radius: .5rem;
+          -moz-border-radius: .5rem;
+          border-radius: .5rem;
+          border: 1px solid $gray;
+        }
+      }
+
+      p, ul, ul li, ul li a {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+
+          &:before {
+            font-family: "FontAwesome";
+            content: "\f0da";
+            color: #656565;
+            padding: 0 .6rem;
+          }
+        }
+      }
+    }
+  }
+}
