@@ -9,4 +9,5 @@
 import './editor.scss';
 import './style.scss';
 
+import { accordionContainer } from './includes/container';
 import { accordionItem } from './includes/content';

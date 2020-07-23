@@ -17,6 +17,14 @@
   max-width: 740px;
   padding: 2rem; }
 
+.accord-group {
+  border: 1px solid #dedede;
+  background: #f4f4f4;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: .5rem; }
+
 .accord-item-container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

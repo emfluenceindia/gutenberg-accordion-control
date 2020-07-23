@@ -16,6 +16,7 @@ function emfl_accordion_control() {
         title: __( 'Accordion Item' ),
         icon: 'menu-alt',
         category: 'layout',
+        parent: ['emfl/accordion-group'],
         keywords: [],
         attributes: {
             itemHeading: {
