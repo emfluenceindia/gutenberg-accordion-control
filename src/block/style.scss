@@ -90,12 +90,23 @@
         box-sizing: border-box;
         padding: .65rem;
         color: $white;
-        border-top-left-radius: .5rem;
-        border-top-right-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        border-radius: .5rem;
 
         &:hover, &.accord-active {
           background: #2ea2cc !important;
         }
+
+        &.accord-active {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
+        &.accord-active:before {
+          font-family: "FontAwesome";
+          content: "\f0d7";
+       }
 
         &:before {
           font-family: "FontAwesome";
@@ -122,6 +133,7 @@
       figure {
         margin: 0 auto !important;
         padding: 0;
+        position: relative;
 
         img {
           width: 100%;
@@ -130,6 +142,23 @@
           -moz-border-radius: .5rem;
           border-radius: .5rem;
           border: 1px solid $gray;
+        }
+
+        figcaption {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          background: rgba(0, 0, 0, .45);
+          color: $white;
+          text-align: center;
+          font-size: 110%;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          padding: 1.25rem 0;
+          border-bottom-left-radius: .5rem;
+          border-bottom-right-radius: .5rem;
         }
       }
 

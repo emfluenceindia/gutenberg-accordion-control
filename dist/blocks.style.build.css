@@ -71,10 +71,15 @@
       box-sizing: border-box;
       padding: .65rem;
       color: #f4f4f4;
-      border-top-left-radius: .5rem;
-      border-top-right-radius: .5rem; }
+      border-radius: .5rem; }
       .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-heading a:hover, .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-heading a.accord-active {
         background: #2ea2cc !important; }
+      .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-heading a.accord-active {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; }
+      .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-heading a.accord-active:before {
+        font-family: "FontAwesome";
+        content: "\f0d7"; }
       .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-heading a:before {
         font-family: "FontAwesome";
         content: "\f0da";
@@ -93,12 +98,27 @@
     border-bottom-right-radius: .5rem; }
     .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-content figure {
       margin: 0 auto !important;
-      padding: 0; }
+      padding: 0;
+      position: relative; }
       .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-content figure img {
         width: 100%;
         margin: 1rem auto;
         border-radius: .5rem;
         border: 1px solid #dedede; }
+      .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-content figure figcaption {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.45);
+        color: #f4f4f4;
+        text-align: center;
+        font-size: 110%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 1.25rem 0;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem; }
     .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-content p, .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-content ul, .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-content ul li, .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-content ul li a {
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
     .wp-block-emfl-accordion-group .emfl-accord-item .emfl-item-content ul {
