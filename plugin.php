@@ -21,3 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Block Initializer.
  */
 require_once plugin_dir_path( __FILE__ ) . 'src/init.php';
+
+
+/* mem package update: https://stackoverflow.com/a/58294621/1496518 */
