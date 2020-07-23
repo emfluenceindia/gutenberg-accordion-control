@@ -46,7 +46,7 @@ function emfl_accordion_control() {
                             placeholder={ __( 'Add item heading' ) }
                         />
                         <div className="accord-content">
-                            <InnerBlocks allowedBlocks={ ['core/paragraph', 'core/list', 'core/image', 'core/video'] } />
+                            <InnerBlocks allowedBlocks={ ['core/paragraph', 'core/list', 'core/image', 'core/video', 'core/html'] } />
                         </div>
                     </div>
                 </div>
